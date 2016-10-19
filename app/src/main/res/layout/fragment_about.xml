@@ -70,15 +70,15 @@
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
                     android:paddingTop="4dp"
                     android:text="@string/speakers"
-                    android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/speakers_recycler_view"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                    android:layout_height="wrap_content" />
 
 
             </LinearLayout>

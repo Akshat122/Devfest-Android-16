@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatDrawableManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,7 +59,7 @@ public class TimelineDisplayFragment extends Fragment {
                 .sourceEncoder(new StreamEncoder())
                 .cacheDecoder(new FileToStreamDecoder<SVG>(new SvgDecoder()))
                 .decoder(new SvgDecoder())
-                .placeholder(R.drawable.ic_gdg_icon)
+                .placeholder(AppCompatDrawableManager.get().getDrawable(getContext(), R.drawable.ic_gdg_icon))
                 .error(R.drawable.ic_gdg)
                 .animate(android.R.anim.fade_in)
                 .listener(new SvgSoftwareLayerSetter<Uri>());
